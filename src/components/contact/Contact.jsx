@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 const Contact = () => {
@@ -8,10 +8,10 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm("service_mkmxga9", "template_c17oc4i", form.current, {
-    //   publicKey: "qQh9qUneJXwHpYCMq",
-    // });
-    // e.target.reset();
+    emailjs.sendForm("service_0nofj1y", "template_1iwyuze", form.current, {
+      publicKey: "RKSdjMzc6MODbjioH",
+    });
+    e.target.reset();
   };
 
   return (
